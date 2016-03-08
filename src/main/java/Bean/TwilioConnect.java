@@ -9,7 +9,7 @@ import org.json.simple.parser.JSONParser; //Dependency
 public class TwilioConnect {
     
     String username = null, password = null;
-    String accountSID = null, authToken = null;
+    public String accountSID = null, authToken = null;
 	
 	public TwilioConnect(){
 		try{
