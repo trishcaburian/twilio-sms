@@ -10,6 +10,10 @@ public class TwilioConnect {
     
     String username = null, password = null;
     String accountSID = null, authToken = null;
+	
+	public TwilioConnect(){
+		setCreds();
+	}
     
     private void setCreds()throws Exception{
         Map<String, String> env = System.getenv();
