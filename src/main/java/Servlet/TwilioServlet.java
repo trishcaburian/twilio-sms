@@ -84,6 +84,7 @@ public class TwilioServlet extends HttpServlet {
         PrintWriter out = response.getWriter();
         Sms msg = null;
         TwilioConnect connect = new TwilioConnect();
+		
         String authToken = connect.getAuthToken();
         String accountSID = connect.getAcctSID();
         TwilioRestClient tw_client = new TwilioRestClient(accountSID, authToken);
