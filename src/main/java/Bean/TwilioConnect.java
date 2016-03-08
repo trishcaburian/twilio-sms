@@ -12,7 +12,11 @@ public class TwilioConnect {
     String accountSID = null, authToken = null;
 	
 	public TwilioConnect(){
-		setCreds();
+		try{
+			setCreds();
+		}catch (Exception e){
+			
+		}
 	}
     
     private void setCreds()throws Exception{
