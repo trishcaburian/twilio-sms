@@ -87,7 +87,7 @@ public class TwilioServlet extends HttpServlet {
 		
         String authToken = connect.getAuthToken();
         String accountSID = connect.getAcctSID();
-        TwilioRestClient tw_client = new TwilioRestClient(connect.getAcctSID(), connect.getAuthToken());
+        TwilioRestClient tw_client = new TwilioRestClient("AC271d8a0ec14333018c7701aa80f3308d", "f72b1ed7907d95622905f35deda2d8e7");
         
         Map<String, String> params = new HashMap<String, String>();
         
