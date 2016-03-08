@@ -30,7 +30,7 @@ public class TwilioConnect {
             
             for (Object key : v_serv.keySet()) {
                 String keyStr = (String) key;
-                if (keyStr.toLowerCase().contains("Twilio")) {
+                if (keyStr.toLowerCase().contains("user-provided")) {
                     service = (JSONObject) ((JSONArray) v_serv.get(keyStr)).get(0);
                     break;
                 }
