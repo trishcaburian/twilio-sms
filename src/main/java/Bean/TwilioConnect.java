@@ -43,8 +43,8 @@ public class TwilioConnect {
                 accountSID = (String) creds.get("accountSID");
                 authToken = (String) creds.get("authToken");
                 
-                this.accountSID = username;
-                this.authToken = password;
+                this.accountSID = accountSID;
+                this.authToken = authToken;
             }
             else {
                 throw new Exception("Twilio service not found");
