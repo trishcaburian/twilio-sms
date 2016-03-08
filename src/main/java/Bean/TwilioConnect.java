@@ -9,7 +9,7 @@ import org.json.simple.parser.JSONParser; //Dependency
 public class TwilioConnect {
     
     String username = null, password = null;
-    public String accountSID = null, authToken = null;
+    String accountSID = null, authToken = null;
 	
 	public TwilioConnect(){
 		try{
@@ -38,11 +38,8 @@ public class TwilioConnect {
             
             if (service != null) {
                 JSONObject creds = (JSONObject) service.get("credentials");
-                accountSID = (String) creds.get("accountSID");
-                authToken = (String) creds.get("authToken");
-                
-                this.accountSID = accountSID;
-                this.authToken = authToken;
+                this.accountSID = (String) creds.get("accountSID");
+                this.authToken = (String) creds.get("authToken");
             }
             else {
                 throw new Exception("Twilio service not found");
