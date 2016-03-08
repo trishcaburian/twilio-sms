@@ -38,8 +38,6 @@ public class TwilioConnect {
             
             if (service != null) {
                 JSONObject creds = (JSONObject) service.get("credentials");
-                //String username = (String) creds.get("username");
-                //String password = (String) creds.get("password");
                 accountSID = (String) creds.get("accountSID");
                 authToken = (String) creds.get("authToken");
                 
