@@ -14,7 +14,7 @@
     <body>
         <form method="POST" action="TwilioServlet">
 			<p>
-            <input name="your_number" id="your_number" type="text" value="" placeholder="Enter your Twilio phone number here">
+            <input name="twilio_num" id="twilio_num" type="text" value="" placeholder="Enter your Twilio phone number here">
             <p>
             <input name="sendto" id="sendto" type="text" value="" placeholder="Enter phone number here">
             </p>
