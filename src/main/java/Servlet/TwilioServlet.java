@@ -91,7 +91,7 @@ public class TwilioServlet extends HttpServlet {
         
         Map<String, String> params = new HashMap<String, String>();
         
-        params.put("From", request.getParameter("your_number");
+        params.put("From", request.getParameter("your_number"));
         params.put("Body", request.getParameter("smsmsg"));
         params.put("To", request.getParameter("sendto"));
         
