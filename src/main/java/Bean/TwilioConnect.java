@@ -30,13 +30,13 @@ public class TwilioConnect {
             
             for (Object key : v_serv.keySet()) {
                 String keyStr = (String) key;
-                if (keyStr.toLowerCase().contains("user-provided")) {
+                if (keyStr.toLowerCase().contains("user-provided")) { //twilio vcap_services json uses "user-provided"
                     service = (JSONObject) ((JSONArray) v_serv.get(keyStr)).get(0);
                     break;
                 }
             }
             
-            if (service != null) {
+            if (service != null) { //set the needed credentials accountSID and authToken
                 JSONObject creds = (JSONObject) service.get("credentials");
                 this.accountSID = (String) creds.get("accountSID");
                 this.authToken = (String) creds.get("authToken");
